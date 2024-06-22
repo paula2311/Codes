@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 40px auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .in input{
+            width: 50%;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            outline-color: cadetblue;
+        }
+        .code{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #choose_code{
+            width: 30%;
+            margin: 20px auto;
+            padding: 10px;
+            outline-color: cadetblue;
+            font-size: 20px;
+        }
+        button{
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #output{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px auto;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="in">
+        <input type="text" placeholder="ادخل الكلمة" id="input">
+    </div>
+    <div class="code">
+        <label for=""> اختار طريقة التشفير</label>
+        <select id="choose_code">
+            <option value="1">الشفر الرقمية</option>
+            <option value="2">الشفر المربعة</option>
+            <option value="3">الشفر المعكوسة</option>
+        </select>
+    </div>
+        <button onclick="encryptName()">تشفير</button>
+    
+
+    <pre id="output"></pre>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
